@@ -286,3 +286,92 @@ main{ /*Contenedor de las 4 Secciones*/
     font-weight:300;
     color: var(--warm-black);
 }
+
+.main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px; /*Pixelaje min en celulares*/
+    height: auto;
+    padding: 20px 10px; /*20px de arriba/abajo y 10px de los lados*/
+    background-color: var(--warm-black);
+}
+.product-detail--patata-logo{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    background: url('assets/icons/potato-left.svg');
+    top: -10px; /*Antes del contenedor padre*/
+    left: calc(50% - 20px);/*Width: 40 Dividido 2: 20px*/
+}
+
+
+
+
+.product-detail--title{
+    width:90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top:50px;
+    text-align: center;
+}
+.product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color:var(--just-white);
+}
+.product-detail--title p{
+    margin-bottom: 20px;/*Separamos de la primera tarjeta*/
+    font-size:1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080; /*Este color no se repite, por lo que no era necesario agregarlo como variable*/
+}
+
+.product-detail--card{
+    width: 90%;
+    min-width: 288px;/*Al ser responsivo, necesitamos delimitar el crecimiento de los contenedores*/
+    max-width: 400px;/*Cuando llegue a este pixelaje ya no crecerá*/
+    height: 150px;
+    margin: 15px auto; 
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product--card-icon{
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock{
+    background-image: url('assets/icons/clock.svg');
+}
+.eye{
+    background-image: url('assets/icons/eye.svg'); 
+}
+.dollar{
+    background-image: url('assets/icons/dollar-sign.svg');
+}
+.check-circle{
+    background-image: url('assets/icons/check-circle.svg');
+}
+.product--card-title{
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight:bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product--card-body{
+    font-size:1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: #808080;
+}
